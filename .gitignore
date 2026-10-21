@@ -218,3 +218,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Projeto Streamlit ----
+# Ambiente virtual
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Segredos do Streamlit (nunca versionar)
+.streamlit/secrets.toml
+
+# Sistema
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Dados
+# raw: dado bruto, não vai para o Git (só o .gitkeep)
+# clean: dado tratado, VERSIONADO de propósito: o app no Streamlit Cloud só lê o que está no GitHub
+data/raw/*
+!data/raw/.gitkeep
+
+# Skills do Streamlit (symlinks para o venv; cada aluno roda `streamlit skills`)
+.claude/skills/
+.agents/skills/
