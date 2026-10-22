@@ -24,22 +24,23 @@ A EDA, o tratamento do dataset (`data/clean/dataset.csv`) e a escolha do tema s�
 
 ## Prompts usados
 
-Os prompts foram dados em português, em sequência, na mesma sessão:
+A interação foi conduzida em português, em uma única sessão, em **etapas sequenciais**. A tabela resume cada pedido (objetivo, contexto e resultado esperado). É um **resumo** dos pedidos, não a transcrição literal, e as mensagens originais eram curtas (por exemplo, "Etapa 2").
 
-1. "Analise o repositório, o que deve ser feito no momento, crie um arquivo com um passo a passo e checklist para você se lembrar."
-2. "Sim, comece pela Etapa 1." (heatmap de correlação e histograma)
-3. "Etapa 2." (cache de dados e conferência de `VARS_QUANT`)
-4. "Etapa 3." (Dashboard 2 com KPIs)
-5. "Etapa 4." (notebooks e documentação)
-6. "Etapa 5." (preparação do deploy e push)
-7. "Etapa 6." (revisão final)
-8. "Crie uma declaração de Uso de IA profissional e repare que coloquei um rascunho de dashboard, vê se ele serve."
+| Etapa | Objetivo do pedido | Contexto e restrições (lidos pela IA no repositório) | Resultado esperado |
+| --- | --- | --- | --- |
+| 0 | Diagnosticar o repositório e planejar o trabalho | Repositório-modelo da disciplina, com `TODO`s no `app.py` e no `data_loader.py` | Plano com passo a passo e checklist, salvo em arquivo local |
+| 1 | Implementar o Dashboard 1 | Seguir o esqueleto e o rascunho do professor; Plotly; dados só via `src/data_loader.py` | Heatmap de correlação e histograma, com tratamento de filtros vazios |
+| 2 | Otimizar o carregamento de dados | Manter a interface de `load_data` | `@st.cache_data` e conferência de `VARS_QUANT` com a EDA |
+| 3 | Implementar o Dashboard 2 | KPIs na mesma página, reaproveitando sidebar e `df_filtrado` | Cinco KPIs com `st.metric` e delta contra o dataset completo |
+| 4 | Organizar a documentação e os notebooks | README como referência de entregáveis | Notebook final como `eda.ipynb` e rascunho desta declaração |
+| 5 | Preparar o deploy | Streamlit Community Cloud; repositório público | Verificação de `requirements.txt` e de `data/clean/`; commit e push |
+| 6 | Revisão final | Checklist do README | Lista do que ainda dependia do autor |
 
-Quando a IA pediu decisões de projeto, o autor respondeu:
+Quando a IA apresentou alternativas, as decisões foram do autor:
 
 - Dashboard 2 na mesma página, abaixo do Dashboard 1, e não em página separada.
 - KPIs: total de pacientes, % com doença cardíaca, idade média, colesterol médio e FC máxima média.
-- Usar `eda-com-downloads.ipynb` como `eda.ipynb` e remover os notebooks redundantes.
+- `eda-com-downloads.ipynb` como `eda.ipynb`, removendo os notebooks redundantes.
 - Repositório público.
 
 ## O que foi aceito, modificado ou rejeitado e por quê
