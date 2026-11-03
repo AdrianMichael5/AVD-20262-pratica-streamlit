@@ -1,7 +1,7 @@
 # Checklist — entrega College.csv
 
 **Atualização:** 2026-11-03, America/Fortaleza. **Responsável:** Adrian Michael.
-**Assistência técnica/documental:** Codex (OpenAI). Base Git local: `1c8f1de`; mudanças ainda sem commit.
+**Assistência técnica/documental:** Codex (OpenAI). Base histórica: `1c8f1de`; entrega College enviada a main no commit `b1bb1db`, após autorização expressa do autor.
 
 `[x]` indica evidência local, não aprovação dos testes do app publicado. Ao concluir um item, registrar data, executor, commit e evidência. Resultados anteriores de Heart Disease são históricos.
 
@@ -20,7 +20,7 @@
 | D04 | [x] | Público adotado por delegação do autor: coordenação de planejamento institucional. A justificativa técnica assistida está registrada; revisão pessoal segue em A06. |
 | D05 | [x] | Cinco métricas implementadas: médias de Apps, Accept, Enroll, Expend e Grad.Rate, reaproveitando o bloco de médias da EDA. A justificativa pessoal é A06. |
 | D06 | [x] | Três visuais adicionais no Dashboard 2: médias por tipo, dispersão Apps × Accept e boxplot de Expend por tipo. |
-| A01 | [ ] | App, notebook, CSV, src, scripts, testes, entregas e prompts completos no repositório remoto. Os novos arquivos ainda não receberam commit/push. |
+| A01 | [x] | App, notebook, CSV, src, scripts, testes, entregas e prompts enviados ao repositório remoto em `b1bb1db`; notebook original e PDF de template incluídos conforme pedido “commite tudo”. Segredos/ambiente/temporários ignorados. |
 | A02 | [x] | Dois rascunhos College em `entregas/`, com autoria/data e identificação de revisão posterior ao app inicial. Conferidos visualmente. |
 | A03 | [x] | Repositório público confirmado via GitHub CLI: https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit, branch main. Conteúdo remoto final depende de A01. |
 | A04 | [ ] | App publicado e URL real adicionada ao README. |
@@ -38,7 +38,7 @@
 | 1. Planejamento | Adaptado para College | Dois rascunhos e planejamento; público/justificativa individual pendentes. |
 | 2. Implementação | Concluída localmente | App College, cinco KPIs, três gráficos, filtro de tipo e 17 variáveis; dez testes aprovados. |
 | 3. Documentação/EDA | Parte técnica realizada | 49 células executadas, CSV conferido e documentação atualizada; textos pessoais e PDF assinado pendentes. |
-| 4. Publicação | Preparada | Parâmetros de main/app.py definidos e repositório público; falta commit/push/deploy e URL real. |
+| 4. Publicação | Código enviado; deploy pendente | Commit/push confirmados para main; parâmetros de app.py/Python 3.12 preparados. Falta publicar no painel Streamlit e registrar URL real; host de navegador indisponível nesta sessão. |
 | 5. Aceite | Pendente | Executar o roteiro abaixo na versão publicada. |
 
 ## Aceite publicado

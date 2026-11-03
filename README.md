@@ -4,7 +4,7 @@ Projeto de Adrian Michael para Análise e Visualização de Dados, Cesar School,
 
 **Tema confirmado pelo autor em 03/11/2026:** College.csv, conforme a EDA do arquivo `Cópia_de_Aula_11_Prática_EDA.ipynb`. A versão atual substitui o app anterior de Heart Disease.
 
-**App publicado:** URL ainda pendente. As alterações estão locais, sem commit/push; o link real será incluído após o deploy.
+**App publicado:** URL ainda pendente. O projeto College foi enviado ao GitHub em `main`, commit [b1bb1db](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit/commit/b1bb1db9d8e9c746880180589ee0e36f8f7eb951). O link real do app será incluído após o deploy.
 
 ## Dashboards
 
@@ -64,7 +64,7 @@ O arquivo original do autor foi preservado; o notebook final é [notebooks/eda.i
 - [Roteiro da reflexão individual](prompts/roteiro-reflexao-individual.md)
 - [Conferência do template e pendências pessoais](prompts/conferencia-template.md)
 - [Preparação da publicação](entregas/preparacao-publicacao.md)
-- [Repositório público](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit) — remoto ainda sem as melhorias locais.
+- [Repositório público](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit) — código College e entregáveis enviados para main.
 
 O PDF foi gerado no template original, com identificação preenchida e campo editável de reflexão. **Antes de assinar:** escrever 8–15 linhas de reflexão, confirmar o uso histórico de `streamlit skills` e revisar as declarações. A assinatura será feita pelo autor; o PDF ainda não está assinado.
 

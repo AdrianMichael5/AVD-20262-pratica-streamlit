@@ -1,7 +1,7 @@
 # Preparação da publicação — College.csv
 
 **Data:** 2026-11-03. **Executor:** Codex (OpenAI), solicitado por Adrian Michael.
-**Estado:** sem commit/push/deploy; URL pública ainda pendente.
+**Estado:** código e entregáveis enviados a main no commit `b1bb1db`; deploy e URL pública ainda pendentes.
 
 ## Parâmetros
 
@@ -14,12 +14,12 @@
 | Dependências do app | requirements.txt |
 | Dados usados pelo app | data/clean/dataset.csv, College, 777 linhas/20 colunas |
 | Autenticação/segredos do app | Nenhum; não baixa da Kaggle em execução |
-| Versão remota consultada | 1c8f1decf19ed0bc73ae86141c5924c01f42dbac; anterior às alterações locais |
+| Versão da entrega enviada | b1bb1db9d8e9c746880180589ee0e36f8f7eb951; código College e entregáveis |
 | URL | Não atribuída |
 
 A EDA e ferramentas de revisão usam `requirements-dev.txt`, separado das dependências do deploy. Os testes e rascunhos College estão em [validacao-college.md](validacao-college.md).
 
-## Antes do envio
+## Antes da entrega acadêmica final
 
 Concluir a justificativa individual, reflexão e declaração assinada. Revisar e incluir explicitamente app, src, notebook final, CSV/manifesto tratado, scripts, testes, entregas, prompts, requisitos, configuração e documentação. O arquivo original do autor e o template PDF foram preservados como referências locais.
 
@@ -35,4 +35,4 @@ Procedimento conferido nas documentações oficiais de [deploy](https://docs.str
 
 Executar P01–P08 do [checklist](../CHECKLIST.md) em janela anônima, registrando URL/commit/data/executor. O host de navegador estava indisponível para inspeção visual nesta sessão; AppTest e HTTP local não substituem esse aceite.
 
-O tema College já foi confirmado. O que continua dependente do autor é a decisão/justificativa pessoal das métricas, a reflexão, identificação e assinatura. Nenhum conteúdo foi publicado nesta adaptação.
+O tema College e a identificação já foram fornecidos. O autor delegou a adoção da proposta técnica de público/métricas; justificativa pessoal, reflexão e assinatura continuam pendentes. Código e documentos foram publicados no GitHub; isso não equivale à hospedagem do app. A versão instalada do CLI Streamlit foi consultada e não possui comando de deploy. O host de navegador necessário para operar o Community Cloud está indisponível nesta sessão.

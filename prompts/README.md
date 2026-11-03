@@ -4,7 +4,7 @@ Esta pasta serve para três propósitos:
 
 1. **Rascunhos do layout**: nesta entrega estão em [entregas/](../entregas/README.md), com data e autoria assistida. Foram produzidos como revisão posterior ao app inicial, e não comprovam planejamento anterior ao código. A imagem do professor nesta pasta é apenas referência didática.
 2. **Template de prompt do rascunho → esqueleto**: [layout-skeleton-prompt.md](layout-skeleton-prompt.md) traz o template de 4 blocos (Contexto, Entrada, Restrições, Formato de saída). Preencha com o caminho do seu rascunho, anexe a imagem e envie à ferramenta de IA.
-3. **Declaração de Uso de IA**: [declaracao-uso-ia.md](declaracao-uso-ia.md) é uma minuta factual organizada nas oito seções do template. O entregável exigido é o PDF preenchido e assinado `prompts/DECLARACAO_IA.pdf`, também entregue no Classroom. Ainda depende dos campos pessoais, reflexão e assinatura do autor.
+3. **Declaração de Uso de IA**: o [PDF de oito páginas](DECLARACAO_IA.pdf) foi gerado no template original com identificação preenchida, anexos de usos e campo editável de reflexão. O [Markdown](declaracao-uso-ia.md) guarda o registro factual. Antes da entrega no Classroom, o autor deve revisar as marcações, preencher a reflexão e assinar.
 
 Dica: guarde aqui uma cópia dos prompts que você realmente usou, para preencher a declaração de uso de IA de forma mais simples.
 

@@ -10,6 +10,8 @@ O Git é a fonte de autoria e detalhe técnico. Cada entrada deve indicar o que 
 
 ### Adaptação para College — 2026-11-03
 
+- **2026-11-03 — envio autorizado por Adrian Michael de Araujo, executado com Codex:** commit `b1bb1db` e push confirmados em main; 47 arquivos alterados/criados, incluindo o original da EDA, template e PDF da declaração. Checklist/README atualizados com o envio. Hospedagem do app continua pendente por indisponibilidade de acesso ao painel web; nenhuma URL fictícia foi inserida.
+
 - **2026-11-03 — Codex (OpenAI), solicitado por Adrian Michael de Araujo:** identificação preenchida com dados fornecidos, proposta técnica de métricas mantida por delegação do autor e roteiro da reflexão criado. PDF gerado no template original, com anexos de usos, campo AcroForm de reflexão e assinatura pendente; oito páginas renderizadas e conferidas. Autor solicitou commit e push de todos os arquivos; publicação Streamlit depende do painel web, indisponível por esta sessão.
 
 - **Responsável:** Adrian Michael; **implementação/revisão assistida:** Codex (OpenAI). Pedido explícito: “use college.csv”.
