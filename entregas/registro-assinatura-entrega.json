@@ -1,0 +1,12 @@
+{
+    "data":  "2026-11-03",
+    "executor":  "Codex (OpenAI), a pedido de Adrian Michael de Araujo",
+    "origem":  "prompts/DECLARACAO_IA_assinado.pdf",
+    "destino":  "prompts/DECLARACAO_IA.pdf",
+    "sha256":  "7f72786bee1af8cfd8ae77453b1f52f69eb34549846761027f18484f1d5679cb",
+    "copia_identica":  true,
+    "assinatura_estrutural_presente":  true,
+    "validacao_criptografica_externa":  "Nao executada",
+    "classroom":  "Entrega confirmada pelo autor",
+    "observacao":  "A revisao adicional da EDA foi feita apos a assinatura e registrada separadamente; o PDF assinado nao foi regravado."
+}

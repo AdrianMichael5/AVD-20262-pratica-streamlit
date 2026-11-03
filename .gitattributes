@@ -2,3 +2,5 @@
 *.csv text eol=lf
 *.ipynb text eol=lf
 *.json text eol=lf
+# PDFs assinados não podem sofrer conversão de quebras de linha pelo Git.
+*.pdf binary

@@ -15,7 +15,7 @@ URL informada pelo autor em 03/11/2026 e registrada após resposta HTTP 200. O a
 
 A sidebar oferece seleção de variáveis, filtro de tipo (`Private`), distinção por cores e intervalos inclusivos. Os filtros afetam as duas abas; retirar uma variável remove seu intervalo. Sem variáveis, permanece apenas o filtro de tipo.
 
-**Público adotado:** coordenação de planejamento institucional, conforme delegação do autor para manter a definição técnica mais adequada à EDA. As cinco variáveis foram reaproveitadas do bloco de médias do notebook original. A [justificativa técnica assistida](entregas/justificativa-metricas.md) foi escrita com Codex e precisa da revisão/justificativa pessoal exigida na atividade.
+**Público adotado:** coordenação de planejamento institucional, conforme delegação do autor para manter a definição técnica mais adequada à EDA. As cinco variáveis foram reaproveitadas do bloco de médias do notebook original. A [justificativa técnica assistida](entregas/justificativa-metricas.md) foi escrita com Codex, e o autor confirmou sua revisão; a assistência não é apresentada como autoria individual sem apoio.
 
 ## Dados e origem
 
@@ -51,9 +51,9 @@ python scripts/validar_entrega.py notebook
 python -m unittest discover -s tests -v
 ```
 
-O importador usa o cache bruto quando presente; caso contrário baixa a fonte pública. A EDA final já foi executada: **49 células de código sem erros**, exportando **777 linhas e 20 colunas**. **Dez testes locais passaram.** Veja a [validação College](entregas/validacao-college.md).
+O importador usa o cache bruto quando presente; caso contrário baixa a fonte pública. Após a revisão final, a EDA executou **50 células de código sem erros**, reproduzindo **777 linhas e 20 colunas**, e **12 testes locais passaram**. Veja a [revisão final e suas evidências](entregas/revisao-final-eda.md); a [validação inicial College](entregas/validacao-college.md) permanece como histórico.
 
-O arquivo original do autor foi preservado; o notebook final é [notebooks/eda.ipynb](notebooks/eda.ipynb). Nele, a proveniência Gemini dos textos/conclusões preexistentes está explícita; sua revisão individual continua pendente.
+O original do autor foi preservado; o notebook final é [notebooks/eda.ipynb](notebooks/eda.ipynb). A revisão de respostas/conclusões foi concluída pelo Codex a pedido do autor, com autoria assistida explícita, cálculos reproduzíveis e correções de inconsistências. Ela não é apresentada como produção independente do aluno.
 
 ## Entregáveis e acompanhamento
 
@@ -61,13 +61,13 @@ O arquivo original do autor foi preservado; o notebook final é [notebooks/eda.i
 - [Changelog com datas, responsáveis e commits anteriores](CHANGELOG.md)
 - [Planejamento e dois rascunhos College](entregas/planejamento.md)
 - [Orientações das entregas](entregas/README.md)
-- [Declaração de IA em PDF, com reflexão preenchida para revisão e assinatura](prompts/DECLARACAO_IA.pdf)
+- [Declaração de IA assinada](prompts/DECLARACAO_IA.pdf)
 - [Registro factual em Markdown](prompts/declaracao-uso-ia.md)
 - [Roteiro da reflexão individual](prompts/roteiro-reflexao-individual.md)
 - [Conferência do template e pendências pessoais](prompts/conferencia-template.md)
 - [Preparação da publicação](entregas/preparacao-publicacao.md)
 - [Repositório público](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit) — código College e entregáveis enviados para main.
 
-O PDF foi gerado no template original, com identificação e reflexão assistida de dez linhas preenchidas. A redação com apoio de Codex foi solicitada pelo autor e está declarada no registro de usos. **Antes de assinar:** revisar o texto, confirmar o uso histórico de `streamlit skills` e conferir as declarações. A assinatura será feita pelo autor; o PDF ainda não está assinado.
+O autor forneceu o PDF assinado e confirmou a entrega no Classroom. A cópia no nome exigido foi preservada byte a byte; detalhes no [registro de assinatura e entrega](entregas/registro-assinatura-entrega.json). A revisão adicional da EDA, posterior à assinatura, está em [registro complementar de IA](prompts/2026-11-03-revisao-final-eda.md); o PDF assinado não foi regravado.
 
 `data/raw/`, `.venv/`, `tmp/`, `.env` e `.streamlit/secrets.toml` ficam fora do versionamento. O CSV tratado é intencionalmente versionado para o deploy. Relatórios anteriores de Heart Disease são históricos e não validam o app College.

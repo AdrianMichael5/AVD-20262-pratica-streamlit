@@ -10,8 +10,8 @@
 | ID | Estado | Requisito / evidência |
 | --- | --- | --- |
 | E01 | [x] | Tema College.csv confirmado pelo autor; notebook final em `notebooks/eda.ipynb`, adaptado do original preservado. |
-| E02 | [x] | EDA com 49 células de código executadas sem erros; exporta as 777 linhas/20 colunas usadas pelo app. Manifesto e hashes registrados. |
-| E03 | [ ] | Revisão pessoal das respostas/conclusões preexistentes assistidas por Gemini. Autoria e pendências identificadas no notebook final. |
+| E02 | [x] | EDA final com 50 células de código sem erros, CSV de 777 linhas/20 colunas reproduzido e 12 testes aprovados. Evidências em `entregas/revisao-final-eda.md`. |
+| E03 | [x] | Revisão assistida concluída a pedido do autor: respostas/conclusões conferidas contra resultados, resíduos médicos e afirmações não sustentadas corrigidos. Autoria Codex explícita; não certifica análise independente do aluno. |
 | S01 | [x] | Seletor com 17 variáveis quantitativas; cinco padrão; teste com todas, uma e nenhuma. |
 | S02 | [x] | Slider inclusivo para cada variável selecionada, por interseção; filtro de tipo adicional. Testados os cinco sliders padrão. |
 | D01 | [x] | Mapa de correlação Spearman/Pearson/Kendall, escala -1 a 1 e valores nas células. |
@@ -24,7 +24,7 @@
 | A02 | [x] | Dois rascunhos College em `entregas/`, com autoria/data e identificação de revisão posterior ao app inicial. Conferidos visualmente. |
 | A03 | [x] | Repositório público confirmado via GitHub CLI: https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit, branch main. Conteúdo remoto final depende de A01. |
 | A04 | [x] | URL de publicação informada pelo autor e adicionada ao README: https://college-adrian-avd.streamlit.app/. Resposta HTTP 200 em 03/11/2026; aceite funcional publicado continua em T01–T04. |
-| A05 | [ ] | PDF `prompts/DECLARACAO_IA.pdf` conferido em oito páginas, com identificação e reflexão assistida de dez linhas preenchidas. Texto baseado nos relatos do autor, com apoio de IA registrado no Uso 12. Confirmação de ferramentas/skill, revisão e assinatura pendentes. Entregar também no Classroom. |
+| A05 | [x] | PDF assinado fornecido pelo autor, copiado sem alterações para `prompts/DECLARACAO_IA.pdf`; presença estrutural de assinatura e igualdade SHA256 conferidas. Autor confirmou entrega no Classroom; validação criptográfica externa não executada. Revisão adicional da EDA registrada separadamente após a assinatura. |
 | A06 | [x] | Revisão confirmada pelo autor: “Analisei o justificativa métricas”. O próprio autor marcou os itens de revisão no arquivo; registro de autoria preservado, sem verificação independente de compreensão pela IA. |
 | T01 | [x] | Autor confirmou o item de teste publicado em janela anônima com “Está testado”, em 03/11/2026. URL: https://college-adrian-avd.streamlit.app/. Commit efetivamente testado não informado. |
 | T02 | [x] | Testes dos widgets confirmados pelo autor no relato geral; sem detalhamento individual de casos. Dez testes locais já disponíveis como evidência técnica separada. |
@@ -35,9 +35,9 @@
 
 | Fase | Estado | Evidência / pendência |
 | --- | --- | --- |
-| 1. Planejamento | Adaptado para College | Dois rascunhos e planejamento; público/justificativa individual pendentes. |
-| 2. Implementação | Concluída localmente | App College, cinco KPIs, três gráficos, filtro de tipo e 17 variáveis; dez testes aprovados. |
-| 3. Documentação/EDA | Parte técnica realizada | 49 células executadas, CSV conferido e documentação atualizada; textos pessoais e PDF assinado pendentes. |
+| 1. Planejamento | Registrado e revisado pelo autor | Dois rascunhos, público adotado por delegação e revisão da justificativa confirmada pelo autor. Autoria assistida declarada. |
+| 2. Implementação | Concluída localmente | App College, cinco KPIs, três gráficos, filtro de tipo e 17 variáveis; testes locais aprovados. |
+| 3. Documentação/EDA | Revisão assistida concluída | 50 células executadas, CSV reproduzido e 12 testes aprovados; PDF assinado preservado, Classroom confirmado pelo autor. |
 | 4. Publicação | URL registrada; aceite pendente | Código enviado a main; autor informou https://college-adrian-avd.streamlit.app/, incluída no README. HTTP 200 verificado; carregamento completo no navegador ainda não validado. |
 | 5. Aceite | Teste geral confirmado pelo autor | Relato “Está testado”, em 03/11/2026. Não houve execução independente pela IA nem detalhamento de todos os casos do roteiro abaixo. |
 
@@ -62,4 +62,6 @@ Para novas evidências, registrar URL, commit publicado, data, executor e result
 
 Em 2026-11-03, Adrian confirmou “use college.csv”. Codex obteve a mesma base Kaggle do original (777 instituições, 565 Yes/212 No), adaptou o app, o notebook, os rascunhos e os testes. Na validação final, a EDA executou 49 células sem erros em 61,109 s; dez testes locais passaram em 19,390 s. Dados e hashes em [validação College](entregas/validacao-college.md). O original foi preservado; conclusões/declaração Gemini preexistentes permanecem atribuídas e exigem revisão individual.
 
-Histórico de autores/datas/commits e mudanças: [CHANGELOG.md](CHANGELOG.md). Os registros anteriores de Heart Disease não são evidência do app College.
+Revisão final de 03/11/2026: o autor solicitou a conclusão da EDA pelo Codex, forneceu o PDF assinado e confirmou Classroom. Resultados, correções e limites em [entregas/revisao-final-eda.md](entregas/revisao-final-eda.md). O PDF assinado não foi alterado; assistência posterior registrada em documento separado.
+
+Histórico de autores/datas/commits e mudanças: [CHANGELOG.md](CHANGELOG.md). Os registros anteriores de Heart Disease não são evidência do app College. O checklist registra evidências técnicas/relatos, sem certificar avaliação acadêmica ou autoria independente.

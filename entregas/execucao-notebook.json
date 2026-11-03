@@ -1,14 +1,14 @@
 {
-    "data":  "2026-11-03",
-    "executor":  "Codex (OpenAI), solicitado por Adrian Michael",
-    "python":  "3.12.6",
-    "celulas_codigo":  49,
-    "celulas_executadas":  49,
-    "erros":  0,
-    "duracao_segundos":  61.109,
-    "linhas":  777,
-    "colunas":  20,
-    "csv_reproduzido":  true,
-    "csv_sha256":  "3745eb6e3c2ce6aece48590d43b91a2436c1f4c6492b4f8f1ab5b8e3192bcbeb",
-    "notebook_sha256":  "322c4d9d4ddad5ee0f9845e4dba323524144eab313db80a97a43d870a1b71fff"
+  "data": "2026-11-03",
+  "executor": "Codex (OpenAI), solicitado por Adrian Michael",
+  "python": "3.12.6",
+  "celulas_codigo": 50,
+  "celulas_executadas": 50,
+  "erros": 0,
+  "duracao_segundos": 36.64,
+  "linhas": 777,
+  "colunas": 20,
+  "csv_reproduzido": true,
+  "csv_sha256": "3745eb6e3c2ce6aece48590d43b91a2436c1f4c6492b4f8f1ab5b8e3192bcbeb",
+  "notebook_sha256": "bbafb1b2dd1f782e7268ba1d7ac838238d6cfee90d0a0ed6661ac29fb20c8df0"
 }

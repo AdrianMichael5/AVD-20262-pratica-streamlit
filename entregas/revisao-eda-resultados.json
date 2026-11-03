@@ -1,0 +1,167 @@
+{
+  "n": 777,
+  "ausentes": 0,
+  "duplicadas": 0,
+  "tipos": {
+    "Yes": 565,
+    "No": 212
+  },
+  "skewness_expend": [
+    3.4593217150289033,
+    0.8450721544173918
+  ],
+  "shapiro_expend": 1.6429392838567242e-34,
+  "shapiro_rejeitados": 17,
+  "shapiro_nao_rejeitados": [],
+  "spearman_apps": {
+    "Accept": 0.9793896951852877,
+    "Enroll": 0.9261689324444756,
+    "Expend": 0.1946228504050575
+  },
+  "maior_divergencia_correlacao": {
+    "par": [
+      "P.Undergrad",
+      "Expend"
+    ],
+    "pearson": -0.08356842423283233,
+    "spearman": -0.31478453950760116
+  },
+  "medias_por_tipo": {
+    "No": {
+      "Apps": 5729.92,
+      "Accept": 3919.288,
+      "Enroll": 1640.873,
+      "Expend": 7458.316,
+      "Grad.Rate": 56.042
+    },
+    "Yes": {
+      "Apps": 1977.929,
+      "Accept": 1305.703,
+      "Enroll": 456.945,
+      "Expend": 10486.354,
+      "Grad.Rate": 68.998
+    }
+  },
+  "testes": [
+    {
+      "variavel": "Apps",
+      "p_mannwhitney": 1.8288548129023136e-39,
+      "p_welch": 2.466367145903816e-19,
+      "p_holm": 2.0117402941925449e-38
+    },
+    {
+      "variavel": "Accept",
+      "p_mannwhitney": 1.65790191376346e-42,
+      "p_welch": 7.591106909349487e-22,
+      "p_holm": 1.9894822965161521e-41
+    },
+    {
+      "variavel": "Enroll",
+      "p_mannwhitney": 1.1960009234120587e-56,
+      "p_welch": 1.6486207894224157e-30,
+      "p_holm": 1.794001385118088e-55
+    },
+    {
+      "variavel": "Top10perc",
+      "p_mannwhitney": 2.9411723190370215e-08,
+      "p_welch": 1.8055432656160831e-06,
+      "p_holm": 1.4705861595185108e-07
+    },
+    {
+      "variavel": "Top25perc",
+      "p_mannwhitney": 0.006530554386414742,
+      "p_welch": 0.008461182674392118,
+      "p_holm": 0.006530554386414742
+    },
+    {
+      "variavel": "F.Undergrad",
+      "p_mannwhitney": 2.025981502474645e-66,
+      "p_welch": 3.7801180144094994e-35,
+      "p_holm": 3.444168554206897e-65
+    },
+    {
+      "variavel": "P.Undergrad",
+      "p_mannwhitney": 2.3288620510373965e-52,
+      "p_welch": 2.819286358007547e-18,
+      "p_holm": 3.260406871452355e-51
+    },
+    {
+      "variavel": "Outstate",
+      "p_mannwhitney": 8.311471618565543e-63,
+      "p_welch": 2.4853876393151696e-87,
+      "p_holm": 1.3298354589704869e-61
+    },
+    {
+      "variavel": "Room.Board",
+      "p_mannwhitney": 5.632213278099474e-20,
+      "p_welch": 4.2306371399534784e-26,
+      "p_holm": 3.3793279668596843e-19
+    },
+    {
+      "variavel": "Books",
+      "p_mannwhitney": 0.0018115168895885964,
+      "p_welch": 0.5631734512820683,
+      "p_holm": 0.005434550668765789
+    },
+    {
+      "variavel": "Personal",
+      "p_mannwhitney": 6.406098688852633e-21,
+      "p_welch": 2.07963525642778e-16,
+      "p_holm": 4.4842690821968435e-20
+    },
+    {
+      "variavel": "PhD",
+      "p_mannwhitney": 8.582129936500993e-05,
+      "p_welch": 3.90371039311542e-07,
+      "p_holm": 0.0003432851974600397
+    },
+    {
+      "variavel": "Terminal",
+      "p_mannwhitney": 0.0027430537593312126,
+      "p_welch": 5.620371210633768e-05,
+      "p_holm": 0.005486107518662425
+    },
+    {
+      "variavel": "S.F.Ratio",
+      "p_mannwhitney": 3.789297022223084e-45,
+      "p_welch": 6.404159074774682e-41,
+      "p_holm": 4.926086128890009e-44
+    },
+    {
+      "variavel": "perc.alumni",
+      "p_mannwhitney": 1.0483504403240128e-33,
+      "p_welch": 4.631004292625924e-47,
+      "p_holm": 1.0483504403240128e-32
+    },
+    {
+      "variavel": "Expend",
+      "p_mannwhitney": 2.4565748291411614e-23,
+      "p_welch": 3.228013972189967e-22,
+      "p_holm": 2.210917346227045e-22
+    },
+    {
+      "variavel": "Grad.Rate",
+      "p_mannwhitney": 4.38433503478527e-23,
+      "p_welch": 2.0522429010217508e-23,
+      "p_holm": 3.507468027828216e-22
+    }
+  ],
+  "chi2": 173.29084989146764,
+  "p_chi2": 2.3462271924992635e-38,
+  "esperado_minimo": 70.66666666666667,
+  "cramer_v": 0.47225580656659555,
+  "proporcoes_tercis": {
+    "No": {
+      "Baixo": 0.0896,
+      "Médio": 0.2217,
+      "Alto": 0.6887
+    },
+    "Yes": {
+      "Baixo": 0.4248,
+      "Médio": 0.3752,
+      "Alto": 0.2
+    }
+  },
+  "graduacao_acima_100": 1,
+  "graduacao_maxima": 118
+}

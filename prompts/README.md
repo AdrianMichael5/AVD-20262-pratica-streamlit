@@ -4,7 +4,7 @@ Esta pasta serve para três propósitos:
 
 1. **Rascunhos do layout**: nesta entrega estão em [entregas/](../entregas/README.md), com data e autoria assistida. Foram produzidos como revisão posterior ao app inicial, e não comprovam planejamento anterior ao código. A imagem do professor nesta pasta é apenas referência didática.
 2. **Template de prompt do rascunho → esqueleto**: [layout-skeleton-prompt.md](layout-skeleton-prompt.md) traz o template de 4 blocos (Contexto, Entrada, Restrições, Formato de saída). Preencha com o caminho do seu rascunho, anexe a imagem e envie à ferramenta de IA.
-3. **Declaração de Uso de IA**: o [PDF de oito páginas](DECLARACAO_IA.pdf) tem identificação, anexos e reflexão assistida preenchidos. A [reflexão em texto](reflexao-individual.txt) usa dez linhas baseadas nos relatos do autor; o apoio de Codex está declarado no [registro factual](declaracao-uso-ia.md). Antes da entrega no Classroom, o autor deve revisar texto/marcações e assinar.
+3. **Declaração de Uso de IA**: o [PDF assinado](DECLARACAO_IA.pdf) foi fornecido pelo autor, que confirmou a entrega no Classroom. Foi copiado sem regravação do original [DECLARACAO_IA_assinado.pdf](DECLARACAO_IA_assinado.pdf), com igualdade de hash conferida. A [reflexão em texto](reflexao-individual.txt) e o [Markdown](declaracao-uso-ia.md) guardam os registros da preparação. A [revisão adicional da EDA](2026-11-03-revisao-final-eda.md), posterior à assinatura, foi registrada separadamente.
 
 Dica: guarde aqui uma cópia dos prompts que você realmente usou, para preencher a declaração de uso de IA de forma mais simples.
 

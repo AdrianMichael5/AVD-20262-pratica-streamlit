@@ -6,6 +6,8 @@ O Git é a fonte de autoria e detalhe técnico. Cada entrada deve indicar o que 
 
 ## [Não lançado]
 
+- **2026-11-03 — Codex (OpenAI), a pedido de Adrian Michael de Araujo:** revisão final assistida da EDA, com respostas/conclusões confrontadas com cálculos; corrigidos resíduos médicos, contagem de linhas e alegações indevidas de correlação/causalidade. Acrescentados Holm nas 17 comparações de Mann-Whitney e V de Cramér; 50 células executadas sem erros e 12 testes aprovados. CSV preservado. Arquivo assinado fornecido pelo autor copiado byte a byte para o caminho exigido; presença estrutural de assinatura e hash conferidos, sem regravar o PDF. Classroom registrado conforme confirmação do autor. A assistência posterior à assinatura foi documentada em registro separado.
+
 - **2026-11-03 — Codex (OpenAI), solicitado por Adrian Michael de Araujo:** reflexão em tom direto, baseada nos relatos do autor, salva em `prompts/reflexao-individual.txt`, no Markdown e no campo AcroForm da página 5 do PDF. Dez linhas conferidas visualmente e no valor canônico do campo; apoio à redação registrado no Uso 12. PDF continua editável e sem assinatura, com oito páginas e revisão pessoal pendente. Nenhuma alteração funcional no app.
 
 - **2026-11-03 — confirmação de Adrian Michael de Araujo, registrada com Codex:** autor relatou “Está testado” sobre o item de testes do app publicado e “Analisei o justificativa métricas”. Marcações pessoais no arquivo de justificativa preservadas; checklist atualizado como relato do autor, sem atribuir testes de navegador à IA ou inventar resultados por caso. Revisão da EDA, reflexão e assinatura permanecem em andamento.

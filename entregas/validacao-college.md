@@ -1,5 +1,7 @@
 # Validação — adaptação para College.csv
 
+**Registro histórico da adaptação inicial.** A revisão mais recente, com 50 células e 12 testes, está em [revisao-final-eda.md](revisao-final-eda.md); o registro genérico de execução já aponta para ela.
+
 **Data:** 2026-11-03. **Executor:** Codex (OpenAI), a pedido de Adrian Michael.
 **Versão:** diretório de trabalho, sem commit. Substitui a validação do app Heart Disease.
 

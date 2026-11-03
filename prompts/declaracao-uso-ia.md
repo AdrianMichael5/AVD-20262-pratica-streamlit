@@ -1,6 +1,6 @@
 # Declaração de uso de IA — minuta conforme o template
 
-**Atualização:** 2026-11-03. **Estado:** registro factual; PDF preparado em [DECLARACAO_IA.pdf](DECLARACAO_IA.pdf), com identificação e reflexão assistida preenchidas; revisão e assinatura do autor pendentes.
+**Atualização:** 2026-11-03. **Estado:** PDF assinado fornecido pelo autor e preservado em [DECLARACAO_IA.pdf](DECLARACAO_IA.pdf). A revisão adicional da EDA foi realizada depois da assinatura e registrada separadamente em [2026-11-03-revisao-final-eda.md](2026-11-03-revisao-final-eda.md), sem modificar o documento assinado.
 
 A conferência do PDF está em [conferencia-template.md](conferencia-template.md). O [histórico anterior](historico-declaracao-2026-10-22.md) foi preservado como relato datado, sem tratá-lo como descrição atual do app.
 
@@ -209,8 +209,8 @@ O termo do template deve ser lido e confirmado pessoalmente pelo autor, que prec
 
 **Nome completo:** Adrian Michael de Araujo.
 
-**Assinatura manuscrita ou digital:** pendente.
+**Assinatura:** arquivo assinado fornecido pelo autor; presença estrutural conferida e bytes preservados. Não foi realizada validação criptográfica externa.
 
 **Data:** 03/11/2026.
 
-Depois da revisão individual, transferir o conteúdo ao template, gerar o PDF final, revisar visualmente e assinar. Entregar o PDF assinado em `prompts/DECLARACAO_IA.pdf` e no Classroom. Esta minuta permanece como registro de preparação.
+O autor confirmou a entrega no Classroom. Este Markdown guarda a preparação histórica e os registros complementares; não altera ou amplia retroativamente o conteúdo coberto pela assinatura do PDF.

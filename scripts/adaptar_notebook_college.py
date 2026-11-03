@@ -99,3 +99,5 @@ nb.cells = cells
 nb.metadata = {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}}
 (ROOT / "notebooks/eda.ipynb").write_bytes(nbformat.writes(nb).replace("\r\n", "\n").encode("utf-8"))
 print(f"Notebook College preparado: {len(cells)} células; original preservado.")
+from revisar_eda_college import main as revisar_eda
+revisar_eda()

@@ -4,6 +4,8 @@
 
 **Atualização:** o autor confirmou College.csv. A EDA e os dashboards foram adaptados; a minuta registra Gemini no notebook de referência e a continuidade Codex. As pendências pessoais do template permanecem, mas a escolha do tema já não está pendente. As menções abaixo à investigação anterior são históricas.
 
+**Encerramento técnico em 03/11/2026:** autor forneceu o arquivo assinado e confirmou Classroom. A cópia canônica foi preservada com o mesmo SHA256 e assinatura estrutural presente; validação criptográfica externa não realizada. A revisão adicional da EDA foi concluída por solicitação do autor, com assistência explícita em registro separado posterior à assinatura. Os itens de pendência abaixo documentam a preparação anterior e não invalidam o relato atual de entrega; esta conferência não certifica autoria independente ou avaliação acadêmica.
+
 **Fonte:** PDF local `DECLARACAO_USO_IA_Streamlit_2026-2_NOVA.pdf`, cinco páginas, sem campos AcroForm. Texto extraído e as cinco páginas renderizadas e inspecionadas. O original foi preservado.
 
 ## Exigências encontradas
