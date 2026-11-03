@@ -25,11 +25,11 @@
 | A03 | [x] | Repositório público confirmado via GitHub CLI: https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit, branch main. Conteúdo remoto final depende de A01. |
 | A04 | [x] | URL de publicação informada pelo autor e adicionada ao README: https://college-adrian-avd.streamlit.app/. Resposta HTTP 200 em 03/11/2026; aceite funcional publicado continua em T01–T04. |
 | A05 | [ ] | PDF `prompts/DECLARACAO_IA.pdf` gerado e conferido em oito páginas, com identificação 5A/Adrian Michael de Araujo/ama3@cesar.school/03-11-2026. Reflexão editável vazia; confirmação de ferramentas/skill, revisão e assinatura pendentes. Entregar também no Classroom. |
-| A06 | [ ] | Escolha e justificativa pessoal das métricas/gráficos em `entregas/justificativa-metricas.md`; roteiro atualizado para College, sem respostas inventadas. |
-| T01 | [ ] | Abrir a versão publicada em janela anônima e registrar URL/commit/data/executor. |
-| T02 | [ ] | Todos os widgets responderem no app publicado. Dez testes locais já aprovados; não substituem este aceite. |
-| T03 | [ ] | Clicar nas duas abas no app publicado e conferir os painéis. |
-| T04 | [ ] | Revisar exposição de dados no app publicado, arquivos, outputs e histórico. Triagem limitada de credenciais disponível, sem certificação de ausência de vazamento. |
+| A06 | [x] | Revisão confirmada pelo autor: “Analisei o justificativa métricas”. O próprio autor marcou os itens de revisão no arquivo; registro de autoria preservado, sem verificação independente de compreensão pela IA. |
+| T01 | [x] | Autor confirmou o item de teste publicado em janela anônima com “Está testado”, em 03/11/2026. URL: https://college-adrian-avd.streamlit.app/. Commit efetivamente testado não informado. |
+| T02 | [x] | Testes dos widgets confirmados pelo autor no relato geral; sem detalhamento individual de casos. Dez testes locais já disponíveis como evidência técnica separada. |
+| T03 | [x] | Testes das duas abas confirmados pelo autor no relato geral do item 1. Não executados em navegador pela IA. |
+| T04 | [x] | Revisão de exposição no app incluída no item de testes que o autor declarou concluído. Complementada pela triagem limitada local anterior; não constitui certificação de segurança. |
 
 ## Desenvolvimento em fases
 
@@ -39,22 +39,24 @@
 | 2. Implementação | Concluída localmente | App College, cinco KPIs, três gráficos, filtro de tipo e 17 variáveis; dez testes aprovados. |
 | 3. Documentação/EDA | Parte técnica realizada | 49 células executadas, CSV conferido e documentação atualizada; textos pessoais e PDF assinado pendentes. |
 | 4. Publicação | URL registrada; aceite pendente | Código enviado a main; autor informou https://college-adrian-avd.streamlit.app/, incluída no README. HTTP 200 verificado; carregamento completo no navegador ainda não validado. |
-| 5. Aceite | Pendente | Executar o roteiro abaixo na versão publicada. |
+| 5. Aceite | Teste geral confirmado pelo autor | Relato “Está testado”, em 03/11/2026. Não houve execução independente pela IA nem detalhamento de todos os casos do roteiro abaixo. |
 
 ## Aceite publicado
 
 | Teste | Procedimento / resultado esperado | Estado / evidência |
 | --- | --- | --- |
-| P01 | URL acessível em janela anônima, sem credenciais do autor ou exceções. | Não executado |
-| P02 | Clicar nas duas abas e conferir conteúdo e filtros compartilhados. | Não executado |
-| P03 | Selecionar todas, uma e nenhuma variável; verificar histogramas e avisos. | Não executado |
-| P04 | Alterar sliders, restringir até zero/um registro quando possível e restaurar; verificar contagem e KPIs. | Não executado |
-| P05 | Acionar tipo, toggle, método de correlação e seletor de comparação de médias. | Não executado |
-| P06 | Conferir cinco KPIs e três gráficos adicionais com valores do CSV filtrado; médias/deltas e tipos ausentes coerentes. | Não executado |
-| P07 | Revisar interface, tooltips, tabelas/downloads se houver e erros; ausência de exposição indevida. | Não executado |
-| P08 | Abrir links do README, repositório e entregáveis em janela anônima. | Não executado |
+| P01 | URL acessível em janela anônima, sem credenciais do autor ou exceções. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P02 | Clicar nas duas abas e conferir conteúdo e filtros compartilhados. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P03 | Selecionar todas, uma e nenhuma variável; verificar histogramas e avisos. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P04 | Alterar sliders, restringir até zero/um registro quando possível e restaurar; verificar contagem e KPIs. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P05 | Acionar tipo, toggle, método de correlação e seletor de comparação de médias. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P06 | Conferir cinco KPIs e três gráficos adicionais com valores do CSV filtrado; médias/deltas e tipos ausentes coerentes. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P07 | Revisar interface, tooltips, tabelas/downloads se houver e erros; ausência de exposição indevida. | Confirmado no relato geral do autor; caso sem detalhamento |
+| P08 | Abrir links do README, repositório e entregáveis em janela anônima. | Não informado |
 
-Cada evidência deve incluir URL, commit publicado, data, executor e resultado. Não marcar pela leitura do código.
+O autor confirmou a conclusão geral dos testes publicados em 03/11/2026. A coluna acima registra o relato geral, sem atribuir ao autor evidências por caso que ele não forneceu. A IA não executou esses testes em navegador. O relato geral é registrado em T01–T04. P08 e a identificação exata do commit testado não foram detalhados.
+
+Para novas evidências, registrar URL, commit publicado, data, executor e resultado. Não marcar pela leitura do código.
 
 ## Registro atual
 

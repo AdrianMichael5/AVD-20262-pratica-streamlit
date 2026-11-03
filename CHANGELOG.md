@@ -6,6 +6,8 @@ O Git é a fonte de autoria e detalhe técnico. Cada entrada deve indicar o que 
 
 ## [Não lançado]
 
+- **2026-11-03 — confirmação de Adrian Michael de Araujo, registrada com Codex:** autor relatou “Está testado” sobre o item de testes do app publicado e “Analisei o justificativa métricas”. Marcações pessoais no arquivo de justificativa preservadas; checklist atualizado como relato do autor, sem atribuir testes de navegador à IA ou inventar resultados por caso. Revisão da EDA, reflexão e assinatura permanecem em andamento.
+
 - **2026-11-03 — URL fornecida por Adrian Michael de Araujo; documentação atualizada com Codex:** link https://college-adrian-avd.streamlit.app/ adicionado ao README, checklist e registro de publicação. HTTP 200 confirmado, mas aceite de abas/widgets em janela anônima não realizado; resposta HTML não foi tratada como confirmação de saúde do runtime.
 
 **Tema atual:** College.csv, confirmado pelo autor em 2026-11-03. As entradas de Heart Disease abaixo registram a implementação anterior, supersedida; não validam o app atual.

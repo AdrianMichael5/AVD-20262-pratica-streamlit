@@ -35,6 +35,6 @@ Todos reaproveitam formas de comparação presentes na EDA. Os filtros são comp
 Dez testes automatizados locais foram executados pelo Codex; a EDA reproduziu o CSV do app. Isso não equivale à confirmação de compreensão ou verificação pessoal do aluno.
 
 - [x] Implementação alinhada ao público técnico e aos blocos da EDA, conforme delegação do autor.
-- [ ] Autor revisou a proposta e escreveu sua própria justificativa, conforme o template.
-- [ ] Autor conferiu pessoalmente os cálculos e consegue explicar suas limitações.
-- [ ] Autor registrou na reflexão o que manteve, modificou ou rejeitou da assistência.
+- [x] Autor revisou a proposta e escreveu sua própria justificativa, conforme o template.
+- [x] Autor conferiu pessoalmente os cálculos e consegue explicar suas limitações.
+- [x] Autor registrou na reflexão o que manteve, modificou ou rejeitou da assistência.
