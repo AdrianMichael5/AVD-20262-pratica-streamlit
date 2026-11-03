@@ -1,0 +1,63 @@
+{
+  "data": "2026-11-03T11:23:28-03:00",
+  "executor": "Codex (OpenAI), solicitado por Adrian Michael",
+  "head_local": "1c8f1decf19ed0bc73ae86141c5924c01f42dbac",
+  "arquivos_locais_examinados": 55,
+  "blobs_historicos_examinados": 31,
+  "padroes": [
+    "chave privada",
+    "token GitHub",
+    "identificador de chave AWS",
+    "token OpenAI",
+    "credencial em URL"
+  ],
+  "achados_credenciais": [],
+  "arquivos_com_email_para_revisao": [
+    "CHECKLIST.md",
+    "prompts/declaracao-uso-ia.md",
+    "scripts/gerar_declaracao.py"
+  ],
+  "binarios_sem_inspecao_de_conteudo": [
+    "DECLARACAO_USO_IA_Streamlit_2026-2_NOVA.pdf",
+    "entregas/rascunho_dashboard1.png",
+    "entregas/rascunho_dashboard2.png",
+    "prompts/DECLARACAO_IA.pdf",
+    "prompts/prof_rascunho_dashboard1.png",
+    "git:8883fc39abe7:prompts/prof_rascunho_dashboard1.png"
+  ],
+  "protecao_gitignore": {
+    ".env": true,
+    ".streamlit/secrets.toml": true,
+    ".venv/pyvenv.cfg": true,
+    "tmp/teste.txt": true
+  },
+  "csv_linhas": 777,
+  "csv_colunas": [
+    "Private",
+    "Apps",
+    "Accept",
+    "Enroll",
+    "Top10perc",
+    "Top25perc",
+    "F.Undergrad",
+    "P.Undergrad",
+    "Outstate",
+    "Room.Board",
+    "Books",
+    "Personal",
+    "PhD",
+    "Terminal",
+    "S.F.Ratio",
+    "perc.alumni",
+    "Expend",
+    "Grad.Rate",
+    "Expend_log",
+    "Apps_binned"
+  ],
+  "limites": [
+    "Padrões limitados: nenhum achado não prova ausência de segredos.",
+    "Imagens base64, anexos e binários precisam de revisão visual; o scanner não faz OCR.",
+    "Revisa objetos alcançáveis nas refs locais; não busca refs remotas, artefatos apagados do servidor ou serviços externos.",
+    "Não substitui o teste do app publicado e de downloads/tooltips/mensagens de erro."
+  ]
+}

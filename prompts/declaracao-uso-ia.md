@@ -1,97 +1,187 @@
-# Declaração de Uso de IA
+# Declaração de uso de IA — minuta conforme o template
 
-**Nome:** Adrian Michael
-**Data:** 22/10/2026
-**Disciplina:** Análise e Visualização de Dados (Cesar School, 2026.2)
-**Projeto:** Dashboards em Streamlit sobre o Heart Disease Dataset (UCI)
+**Atualização:** 2026-11-03. **Estado:** registro factual; PDF preparado em [DECLARACAO_IA.pdf](DECLARACAO_IA.pdf), com identificação preenchida, reflexão editável vazia e assinatura pendente.
 
-## Ferramenta
+A conferência do PDF está em [conferencia-template.md](conferencia-template.md). O [histórico anterior](historico-declaracao-2026-10-22.md) foi preservado como relato datado, sem tratá-lo como descrição atual do app.
 
-- **Claude Code** (CLI da Anthropic), modelo **Claude Sonnet 5.5**.
-- Executado localmente, com acesso de leitura e escrita ao repositório e ao terminal.
-- Neste projeto não foram usadas outras ferramentas de IA.
+**Versão atual:** College.csv, confirmado pelo autor com “use college.csv”. Os usos de Heart Disease abaixo são históricos. O app, a EDA, os testes e os rascunhos atuais foram adaptados para College; ver Uso 10. A origem Gemini do notebook fornecido foi incorporada à declaração, sem omitir a geração prévia de textos/conclusões.
 
-## Finalidade do uso
+## 1. Identificação
 
-A IA foi usada como assistente de programação para:
+| Campo | Informação |
+| --- | --- |
+| Turma (5A ou 5B) | 5A |
+| Nome completo | Adrian Michael de Araujo |
+| E-mail | ama3@cesar.school |
+| Repositório | https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit |
+| Data de entrega | 03/11/2026 |
 
-1. Analisar o repositório e montar um plano de trabalho (`CHECKLIST.md`, arquivo local não versionado).
-2. Implementar os gráficos do Dashboard 1 em `app.py`.
-3. Implementar o Dashboard 2 (KPIs) em `app.py` e o cache de dados em `src/data_loader.py`.
-4. Organizar os notebooks e redigir esta declaração.
+## 2. Diretrizes e pontos que precisam de revisão
 
-A EDA, o tratamento do dataset (`data/clean/dataset.csv`) e a escolha do tema são do autor. O esqueleto inicial do `app.py` (sidebar, filtros e `TODO`s) e o rascunho `prof_rascunho_dashboard1.png` vieram do repositório-modelo da disciplina. Na análise inicial, o Claude Code leu esse rascunho.
+O template reserva ao aluno a escolha e justificativa das métricas, a interpretação dos dados e as conclusões. A assistência de programação e o cálculo podem ser registrados, mas não substituem essas decisões individuais.
 
-## Prompts usados
+**Registro transparente:** o histórico do Claude informa que o layout inicial dos KPIs foi proposto pela IA e aprovado pelo autor. Na sessão Codex, público-alvo, mapeamento de perguntas e os três visuais foram propostos pela IA antes da leitura do PDF. Não serão apresentados como escolhas individuais do aluno. Cabe ao autor revisar a adequação desses usos e escrever sua própria justificativa em [entregas/justificativa-metricas.md](../entregas/justificativa-metricas.md), sem ocultar a assistência anterior.
 
-A interação foi conduzida em português, em uma única sessão, em **etapas sequenciais**. As mensagens enviadas eram curtas e estão transcritas abaixo da tabela. A tabela é um **resumo** do que cada etapa pedia e do contexto que a IA leu no repositório (README, `TODO`s e rascunho do professor).
+As perguntas e a síntese pessoal da EDA permanecem pendentes; a revisão técnica não escreveu conclusões em nome do autor.
 
-| Etapa | Objetivo do pedido | Contexto e restrições (lidos pela IA no repositório) | Resultado esperado |
-| --- | --- | --- | --- |
-| 0 | Diagnosticar o repositório e planejar o trabalho | Repositório-modelo da disciplina, com `TODO`s no `app.py` e no `data_loader.py` | Plano com passo a passo e checklist, salvo em arquivo local |
-| 1 | Implementar o Dashboard 1 | Seguir o esqueleto e o rascunho do professor; Plotly; dados só via `src/data_loader.py` | Heatmap de correlação e histograma, com tratamento de filtros vazios |
-| 2 | Otimizar o carregamento de dados | Manter a interface de `load_data` | `@st.cache_data` e conferência de `VARS_QUANT` com a EDA |
-| 3 | Implementar o Dashboard 2 | KPIs na mesma página, reaproveitando sidebar e `df_filtrado` | Cinco KPIs com `st.metric` e delta contra o dataset completo |
-| 4 | Organizar a documentação e os notebooks | README como referência de entregáveis | Notebook final como `eda.ipynb` e rascunho desta declaração |
-| 5 | Preparar o deploy | Streamlit Community Cloud; repositório público | Verificação de `requirements.txt` e de `data/clean/`; commit e push. **O deploy em si ainda não foi feito** |
-| 6 | Revisão final | Checklist do README | Lista do que ainda dependia do autor |
-| 7 | Redigir esta declaração e revisar o código | Requisitos do `prompts/README.md` | Declaração e `/code-review` em nível alto (ver seção própria) |
+## 3. Declaração geral
 
-Mensagens originais, em ordem:
+- [x] Houve uso de IA generativa no projeto.
+- [ ] O autor revisou o enquadramento de cada uso nas diretrizes e confirmou a versão final.
 
-1. "Analise o repositório, o que deve ser feito no momento, crie um arquivo com um passo a passo e checklist para você se lembrar."
-2. "Sim, comece pela Etapa 1."
-3. "Etapa 2."
-4. "Etapa 3."
-5. "Etapa 4."
-6. "Etapa 5."
-7. "Etapa 6."
-8. "Crie uma declaração de Uso de IA profissional e repare que coloquei um rascunho de dashboard, vê se ele serve."
-9. Pedido para rodar um code review do código (ver "Revisão de código").
+Esta marcação registra o fato do uso. Não equivale à opção do template que afirma uso **somente nas situações permitidas**, que exige revisão do autor diante dos pontos acima.
 
-O arquivo `layout-skeleton-prompt.md` não foi preenchido, e **não houve rascunho do Dashboard 2**: o layout dos KPIs foi proposto pela IA e aprovado pelo autor. O rascunho do Dashboard 1 usado como referência foi o do professor.
+## 4. Ferramentas utilizadas
 
-Quando a IA apresentou alternativas, as decisões foram do autor:
+| Ferramenta | Versão / plano | Parte da atividade |
+| --- | --- | --- |
+| Claude Code (Anthropic) | O histórico de 22/10 informa “Claude Sonnet 5.5”; versão e plano não foram verificados nesta sessão | Implementação inicial, cache, organização dos notebooks e declaração histórica |
+| Colab AI / Gemini (conforme o notebook fornecido) | Versão/plano não informados | Adaptação da EDA College, código, textos, conclusões e justificativas preexistentes; revisão individual pendente |
+| Codex (OpenAI) | Versão exata/plano não registrados; não inferidos | Auditoria, planejamento, código dos dashboards, testes e revisão documental de 03/11 |
+| Skill oficial `streamlit skills` | Codex não a utilizou nesta sessão; uso anterior depende de confirmação do autor | A menção no README-modelo não comprova utilização |
 
-- Dashboard 2 na mesma página, abaixo do Dashboard 1, e não em página separada.
-- KPIs: total de pacientes, % com doença cardíaca, idade média, colesterol médio e FC máxima média.
-- `eda-com-downloads.ipynb` como `eda.ipynb`, removendo os notebooks redundantes.
-- Repositório público.
+A skill de PDF do ambiente Codex foi usada para conferir o template. Não é a skill oficial do Streamlit. Outras ferramentas históricas eventualmente presentes em notebooks de referência devem ser confirmadas pelo autor antes da declaração final.
 
-## O que foi aceito, modificado ou rejeitado e por quê
+## 5. Registro de usos — opção B, blocos por uso relevante
 
-### Aceito
+Os arquivos vinculados são registros/resumos; não são apresentados como transcrições completas. Os relatos históricos de outubro ainda dependem da conferência do autor. “Verificação” abaixo identifica quem executou a checagem; não atribui testes da IA ao aluno.
 
-- **Heatmap de correlação** (`px.imshow`, escala `RdBu_r` fixa de -1 a 1, valores nas células) e **histograma** (`px.histogram`, colorido por `doenca_cardiaca` quando o toggle está ligado). Seguem os `TODO`s do esqueleto e o rascunho do professor.
-- **Tratamento de casos de borda:** avisos para menos de 2 variáveis, nenhuma variável e filtros que deixam poucos ou nenhum paciente. Evita erros do Streamlit com dados vazios.
-- **`@st.cache_data` em `load_data`:** evita reler o CSV a cada interação.
-- **Cinco KPIs com `st.metric`**, com delta em relação ao dataset completo, para o leitor ver o efeito dos filtros. O delta de "% com doença cardíaca" usa `delta_color="inverse"` (aumento em vermelho, por ser indicador de risco) e os demais usam `"off"`.
-- **`width="stretch"`** no lugar de `use_container_width=True`, por este estar depreciado.
-- **Consolidação dos notebooks:** `eda-com-downloads.ipynb` virou `eda.ipynb`, conforme a instrução do README.
+### Uso 1 — diagnóstico e planejamento inicial
 
-### Modificado
+- **Data / ferramenta:** 22/10/2026, Claude Code, conforme histórico.
+- **Parte:** checklist local inicial e leitura do repositório.
+- **Finalidade:** organização do trabalho; enquadramento final a revisar pelo autor.
+- **Pedido:** analisar o repositório e criar passo a passo/checklist.
+- **Aproveitado / modificado:** plano local mencionado na declaração; arquivo não encontrado no início da auditoria de novembro.
+- **Verificação:** relato histórico e commits consultados pelo Codex; o autor deve conferir a sessão original.
+- **Registro:** [histórico, prompts por etapa](historico-declaracao-2026-10-22.md).
 
-- Nenhuma edição manual do código gerado pela IA foi registrada até a data desta declaração.
+### Uso 2 — Dashboard 1 e cache
 
-### Rejeitado
+- **Data / ferramenta:** 22/10/2026, Claude Code, conforme histórico.
+- **Parte:** `app.py` e `src/data_loader.py`.
+- **Finalidade:** sintaxe de gráficos e otimização do carregamento.
+- **Pedido:** implementar etapas 1 e 2 conforme esqueleto e rascunho do professor.
+- **Aproveitado / modificado:** heatmap, histograma selecionável, avisos e `@st.cache_data`; em novembro o histograma único virou uma grade.
+- **Verificação:** o histórico relata AppTest temporário e execução local; os scripts daquela sessão não estão no repositório. A validação de novembro é separada.
+- **Registro:** [histórico](historico-declaracao-2026-10-22.md).
 
-- **Dashboard 2 em página separada** (`st.navigation`): a página única reaproveita a sidebar e o `df_filtrado` sem duplicar código.
-- **Manter os três notebooks:** dois eram redundantes e confundiam a entrega.
+### Uso 3 — KPIs iniciais
 
-## Revisão de código
+- **Data / ferramenta:** 22/10/2026, Claude Code, conforme histórico.
+- **Parte:** Dashboard 2.
+- **Finalidade:** implementação/cálculo de cinco KPIs. A origem da escolha das métricas precisa da revisão individual prevista no template.
+- **Pedido:** “Etapa 3”.
+- **Aproveitado / modificado:** total, percentual cardíaco, idade, colesterol e FC máxima; deltas comparados à base. Em novembro os deltas ficaram neutros e com unidades explícitas.
+- **Verificação:** relato de conferência contra o CSV; testes atuais disponíveis em `tests/test_app.py`.
+- **Registro:** [histórico](historico-declaracao-2026-10-22.md).
 
-Ao final, foi executado o `/code-review` do Claude Code em nível alto sobre o repositório. A revisão apontou, em síntese:
+### Uso 4 — organização, declaração e revisão de código
 
-- Esta declaração resumia os prompts em vez de registrá-los. Foram acrescentadas as mensagens originais.
-- O delta dos KPIs estava listado como "Modificado", embora fosse a implementação inicial da IA. Foi movido para "Aceito".
-- A declaração não dizia que o Dashboard 2 não teve rascunho, que o deploy não foi feito e que o `layout-skeleton-prompt.md` não foi usado. Isso foi acrescentado.
-- As afirmações de verificação não tinham evidência versionada. O texto abaixo foi ajustado para dizer exatamente o que foi feito.
+- **Data / ferramenta:** 22/10/2026, Claude Code, conforme histórico.
+- **Parte:** notebooks, declaração e preparação de dependências para deploy.
+- **Finalidade:** organização e revisão de código/textos.
+- **Pedido:** etapas 4 a 6, declaração profissional e code review.
+- **Aproveitado / modificado:** consolidação do notebook, texto histórico e inclusão dos prompts; publicação não realizada. A declaração atual reorganiza o conteúdo pelos campos do template.
+- **Verificação:** commits `81c9483`, `d35be7b`, `5565440`, `1c8f1de` e relato anterior; revisão do autor pendente.
+- **Registro:** [histórico](historico-declaracao-2026-10-22.md).
 
-O código do app (`app.py` e `src/data_loader.py`) não teve defeitos apontados.
+### Uso 5 — auditoria dos requisitos
 
-## Verificação e responsabilidade
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** checklist, changelog e README.
+- **Finalidade:** comparar os arquivos com o enunciado e documentar pendências.
+- **Pedido:** analisar o que existe/falta e criar checklist e changelog com datas/autores.
+- **Aproveitado / modificado:** diagnóstico, histórico reconstruído dos commits e roteiro de aceite.
+- **Verificação:** leitura estática, contagem do CSV, histórico Git e links relativos pelo Codex.
+- **Registro:** [auditoria](2026-11-03-auditoria-entrega.md).
 
-- Durante a sessão, a IA executou o app com o `AppTest` do Streamlit (todas as variáveis, toggle ligado, 1 e 0 variáveis, filtros restritivos) e não houve exceções. Esses scripts eram temporários e **não estão versionados**.
-- O app foi executado localmente com `streamlit run app.py`.
-- Os valores dos KPIs sem filtro (297 pacientes, 46,1% cardíacos, idade média de 54,5 anos, colesterol de 247 mg/dl e FC máxima de 150 bpm) vêm de `data/clean/dataset.csv` e foram conferidos contra o arquivo.
-- O autor é responsável pelo conteúdo entregue.
+### Uso 6 — planejamento e rascunhos
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** `entregas/planejamento.md`, rascunhos e script de desenho.
+- **Finalidade:** layout; houve também proposta de público/visuais pela IA, que não é atribuída ao aluno e exige revisão das diretrizes.
+- **Pedido:** “comece”, após a apresentação das cinco fases.
+- **Aproveitado / modificado:** proposta de coordenação de pesquisa em cardiologia, perguntas, fórmulas e dois PNGs; decisões pessoais ainda não documentadas pelo autor.
+- **Verificação:** PNGs inspecionados visualmente pelo Codex. Gráficos esquemáticos, sem dados; rascunhos posteriores ao app inicial.
+- **Registro:** [fase 1](2026-11-03-fase1-planejamento.md).
+
+### Uso 7 — implementação e testes
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** app, agregações, teste, notebook e coluna etária do CSV.
+- **Finalidade:** sintaxe/cálculos e depuração; não substitui a justificativa pessoal das escolhas de métricas/gráficos.
+- **Pedido:** “Continue”.
+- **Aproveitado / modificado:** duas abas, histogramas por variável, três gráficos, filtros comuns e rótulos etários corrigidos; demais valores do CSV preservados.
+- **Verificação:** oito testes locais executados pelo Codex, com resultado em [validação da fase 2](../entregas/validacao-fase2.md).
+- **Registro:** [fase 2](2026-11-03-fase2-implementacao.md).
+
+### Uso 8 — revisão técnica/documental
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** EDA, marcações `[IA]`, declaração e documentação.
+- **Finalidade:** execução/depuração técnica, conferência do template e organização factual do registro.
+- **Pedido:** “faça”, em resposta à proposta da fase 3.
+- **Aproveitado / modificado:** distinção entre material didático e produção individual, revisão conceitual de premissas estatísticas com fontes, remoção de instalação de pacote dentro do notebook e preparação dos campos da declaração.
+- **Verificação:** cinco páginas do template extraídas/renderizadas e inspecionadas; execução da EDA e verificações técnicas registradas no relatório da fase 3, conforme resultado efetivo.
+- **Registro:** [fase 3](2026-11-03-fase3-documentacao.md).
+
+### Uso 9 — preparação da publicação
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** revisão dos arquivos/histórico, ambiente local e documentação de deploy.
+- **Finalidade:** conferência técnica e depuração do ambiente; sem publicação.
+- **Pedido:** novo “continue” após a revisão da fase 3.
+- **Aproveitado / modificado:** script de triagem de credenciais, consulta ao GitHub e parâmetros preparados para deploy. Nenhum commit/push realizado.
+- **Verificação:** GitHub CLI confirmou repositório público e commit remoto; triagem sem achados nos padrões pesquisados; servidor local respondeu HTTP 200/`ok`. A inspeção visual foi tentada com a skill de controle do computador, mas o host estava indisponível. Essa skill não é a skill oficial do Streamlit.
+- **Registro:** [fase 4](2026-11-03-fase4-preparacao.md) e [preparação da publicação](../entregas/preparacao-publicacao.md). Não houve teste anônimo ou conclusão das partes pessoais pendentes.
+
+### Uso 10 — conversão para College.csv
+
+- **Data / ferramenta:** 03/11/2026, Codex; notebook original declara assistência anterior de Colab AI/Gemini.
+- **Parte:** app, notebook final, CSV, agregações, testes, rascunhos e documentação.
+- **Finalidade:** adaptação técnica ao tema escolhido pelo autor, sintaxe e reprodução dos blocos já existentes. Não substitui decisão e justificativa individual das métricas.
+- **Pedido:** “use college.csv”.
+- **Aproveitado / modificado:** cinco variáveis do bloco de médias, dispersão Apps × Accept e boxplot por Private; 17 quantitativas no laboratório. Dados obtidos da mesma fonte Kaggle e transformações preservadas. Trechos médicos removidos da cópia final; original intacto. Textos/conclusões Gemini preexistentes mantidos com atribuição e revisão pessoal pendente.
+- **Verificação:** 49 células executadas sem erros, exportação conferida e dez testes locais aprovados; rascunhos inspecionados visualmente. Resultados em [validacao-college.md](../entregas/validacao-college.md). Sem teste visual do app ou publicação.
+- **Registro:** [adaptação College](2026-11-03-adaptacao-college.md).
+
+### Uso 11 — definição técnica, identificação, PDF e envio ao GitHub
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** justificativa técnica, declaração/PDF, documentação e versionamento.
+- **Finalidade:** organizar a proposta técnica solicitada e os registros objetivos; não escrever reflexão pessoal ou assinar pelo aluno.
+- **Pedido:** “Faça oque fizer mais sentido”; dados da turma 5A e identificação fornecidos; “Gere o PDF e eu assino”; publicar app e “commite tudo e faz push”.
+- **Aproveitado / modificado:** mantidas as cinco comparações existentes da EDA para planejamento institucional; justificativa técnica com autoria de IA explícita. Identificação preenchida e PDF gerado no template original, com anexos e reflexão editável. O autor escreverá sua reflexão e assinará.
+- **Verificação:** PDF renderizado e inspecionado; campo da reflexão conferido também na árvore AcroForm, sem conteúdo inventado. Commit/push autorizados; resultado registrado no Git e na documentação após a execução. A ferramenta de acesso ao navegador está indisponível; não há URL pública confirmada do app.
+- **Registro:** [roteiro da reflexão](roteiro-reflexao-individual.md) e histórico Git/CHANGELOG.
+
+## 6. Trechos de código feitos com apoio de IA
+
+| Arquivo / parte | Apoio de IA | Tipo de apoio |
+| --- | --- | --- |
+| `app.py`, estrutura atual | Sim | Claude na implementação inicial; Codex na reorganização por abas e filtros |
+| Dashboard 1 | Sim | Heatmap/histogramas, labels e tratamento de estados |
+| Dashboard 2 | Sim | Implementação, agregações e proposta de visuais; escolha/justificativa individual pendente |
+| `src/data_loader.py` | Sim | Cache histórico Claude; adaptação Codex para College com caminho independente do diretório |
+| `src/analysis.py`, `tests/`, `scripts/`, script dos rascunhos | Sim | Cálculos, testes, migração, execução e desenho por Codex |
+| `notebooks/eda.ipynb` | Sim | Notebook College fornecido declara Gemini em código/textos/conclusões; integração técnica/reprodução por Codex. Revisão individual das conclusões e justificativas pendente |
+| Deploy/configuração | Sem deploy nesta sessão | Preparação relatada anteriormente; publicação e teste externo pendentes |
+
+Marcações `# [IA] ferramenta - finalidade` identificam arquivos inteiramente assistidos e células alteradas. A ausência de marcação em material didático não é certificação de autoria própria.
+
+## 7. Reflexão individual — 8 a 15 linhas
+
+**A escrever pelo próprio autor.** Responder onde a IA ajudou, o que foi ajustado/rejeitado e como a escolha e a validação das métricas refletem decisões suas. Nenhuma resposta pessoal foi inventada nesta minuta.
+
+## 8. Termo de responsabilidade
+
+O termo do template deve ser lido e confirmado pessoalmente pelo autor, que precisa compreender e explicar código, saídas e análises. Não foi assinado ou declarado verdadeiro pela IA em nome do aluno.
+
+**Nome completo:** Adrian Michael de Araujo.
+
+**Assinatura manuscrita ou digital:** pendente.
+
+**Data:** 03/11/2026.
+
+Depois da revisão individual, transferir o conteúdo ao template, gerar o PDF final, revisar visualmente e assinar. Entregar o PDF assinado em `prompts/DECLARACAO_IA.pdf` e no Classroom. Esta minuta permanece como registro de preparação.

@@ -1,0 +1,42 @@
+{
+  "data": "2026-11-03T10:59:04-03:00",
+  "dataset": "College.csv",
+  "fonte_obtida": "https://www.kaggle.com/api/v1/datasets/download/nitishsubandh/dataset/College.csv",
+  "fonte_notebook_original": "https://www.kaggle.com/datasets/nitishsubandh/dataset",
+  "fonte_oficial_alternativa": "https://www.statlearning.com/s/College.csv",
+  "raw_sha256": "f3ecf9c7ca0160c1a4806aed384faa9e4bce0fb555ac2679be2cdc3b347a1611",
+  "clean_sha256": "3745eb6e3c2ce6aece48590d43b91a2436c1f4c6492b4f8f1ab5b8e3192bcbeb",
+  "linhas": 777,
+  "colunas": [
+    "Private",
+    "Apps",
+    "Accept",
+    "Enroll",
+    "Top10perc",
+    "Top25perc",
+    "F.Undergrad",
+    "P.Undergrad",
+    "Outstate",
+    "Room.Board",
+    "Books",
+    "Personal",
+    "PhD",
+    "Terminal",
+    "S.F.Ratio",
+    "perc.alumni",
+    "Expend",
+    "Grad.Rate",
+    "Expend_log",
+    "Apps_binned"
+  ],
+  "contagens_Private": {
+    "Yes": 565,
+    "No": 212
+  },
+  "transformacoes": [
+    "seleção das mesmas 18 variáveis da EDA original",
+    "Expend_log = log1p(Expend)",
+    "Apps_binned = tercis de Apps da base completa; não recalculados por filtro",
+    "sem exclusão de linhas, sem truncar Grad.Rate"
+  ]
+}
