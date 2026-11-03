@@ -1,0 +1,10 @@
+Usei a IA para me ajudar a transformar a EDA do College.csv em um app no Streamlit.
+Ela ajudou no código, nos gráficos, nos filtros, nos testes e na documentação.
+No começo, o projeto usava Heart Disease, então pedi a mudança para College.csv.
+Fiz isso porque College era a base do meu notebook e precisava aparecer no app.
+Analisei a justificativa das métricas e a proposta de planejamento institucional.
+Foram usadas médias de candidaturas, aceitações, matrículas, gastos e graduação.
+Testei o app publicado para conferir o funcionamento dos painéis e dos filtros.
+Os testes automatizados também ajudaram a conferir os cálculos do projeto.
+Os dados são históricos e valores como graduação acima de 100% exigem cuidado.
+A IA ajudou no desenvolvimento, mas revisar e entender a entrega é minha responsabilidade.

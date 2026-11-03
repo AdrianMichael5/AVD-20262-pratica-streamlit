@@ -24,7 +24,7 @@
 | A02 | [x] | Dois rascunhos College em `entregas/`, com autoria/data e identificação de revisão posterior ao app inicial. Conferidos visualmente. |
 | A03 | [x] | Repositório público confirmado via GitHub CLI: https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit, branch main. Conteúdo remoto final depende de A01. |
 | A04 | [x] | URL de publicação informada pelo autor e adicionada ao README: https://college-adrian-avd.streamlit.app/. Resposta HTTP 200 em 03/11/2026; aceite funcional publicado continua em T01–T04. |
-| A05 | [ ] | PDF `prompts/DECLARACAO_IA.pdf` gerado e conferido em oito páginas, com identificação 5A/Adrian Michael de Araujo/ama3@cesar.school/03-11-2026. Reflexão editável vazia; confirmação de ferramentas/skill, revisão e assinatura pendentes. Entregar também no Classroom. |
+| A05 | [ ] | PDF `prompts/DECLARACAO_IA.pdf` conferido em oito páginas, com identificação e reflexão assistida de dez linhas preenchidas. Texto baseado nos relatos do autor, com apoio de IA registrado no Uso 12. Confirmação de ferramentas/skill, revisão e assinatura pendentes. Entregar também no Classroom. |
 | A06 | [x] | Revisão confirmada pelo autor: “Analisei o justificativa métricas”. O próprio autor marcou os itens de revisão no arquivo; registro de autoria preservado, sem verificação independente de compreensão pela IA. |
 | T01 | [x] | Autor confirmou o item de teste publicado em janela anônima com “Está testado”, em 03/11/2026. URL: https://college-adrian-avd.streamlit.app/. Commit efetivamente testado não informado. |
 | T02 | [x] | Testes dos widgets confirmados pelo autor no relato geral; sem detalhamento individual de casos. Dez testes locais já disponíveis como evidência técnica separada. |

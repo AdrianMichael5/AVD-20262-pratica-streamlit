@@ -6,6 +6,8 @@ O Git é a fonte de autoria e detalhe técnico. Cada entrada deve indicar o que 
 
 ## [Não lançado]
 
+- **2026-11-03 — Codex (OpenAI), solicitado por Adrian Michael de Araujo:** reflexão em tom direto, baseada nos relatos do autor, salva em `prompts/reflexao-individual.txt`, no Markdown e no campo AcroForm da página 5 do PDF. Dez linhas conferidas visualmente e no valor canônico do campo; apoio à redação registrado no Uso 12. PDF continua editável e sem assinatura, com oito páginas e revisão pessoal pendente. Nenhuma alteração funcional no app.
+
 - **2026-11-03 — confirmação de Adrian Michael de Araujo, registrada com Codex:** autor relatou “Está testado” sobre o item de testes do app publicado e “Analisei o justificativa métricas”. Marcações pessoais no arquivo de justificativa preservadas; checklist atualizado como relato do autor, sem atribuir testes de navegador à IA ou inventar resultados por caso. Revisão da EDA, reflexão e assinatura permanecem em andamento.
 
 - **2026-11-03 — URL fornecida por Adrian Michael de Araujo; documentação atualizada com Codex:** link https://college-adrian-avd.streamlit.app/ adicionado ao README, checklist e registro de publicação. HTTP 200 confirmado, mas aceite de abas/widgets em janela anônima não realizado; resposta HTML não foi tratada como confirmação de saúde do runtime.

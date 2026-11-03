@@ -56,8 +56,8 @@ def paragraph_text(text):
 def appendix():
     pdfmetrics.registerFont(TTFont("ArialDoc", "C:/Windows/Fonts/arial.ttf"))
     pdfmetrics.registerFont(TTFont("ArialDocBold", "C:/Windows/Fonts/arialbd.ttf"))
-    normal = ParagraphStyle("Corpo", fontName="ArialDoc", fontSize=9, leading=12, spaceAfter=5)
-    heading = ParagraphStyle("Titulo", parent=normal, fontName="ArialDocBold", fontSize=12, leading=16, spaceBefore=12, spaceAfter=7)
+    normal = ParagraphStyle("Corpo", fontName="ArialDoc", fontSize=9, leading=12, spaceAfter=4)
+    heading = ParagraphStyle("Titulo", parent=normal, fontName="ArialDocBold", fontSize=12, leading=16, spaceBefore=10, spaceAfter=6)
     small = ParagraphStyle("Nota", parent=normal, textColor=colors.HexColor("#475569"))
     story = [Paragraph("ANEXO A - Registro detalhado de usos de IA", heading),
              Paragraph("Adrian Michael de Araujo | Turma 5A | 03/11/2026 | Projeto College.csv", small),
@@ -70,8 +70,8 @@ def appendix():
         body = [Paragraph(paragraph_text(line.lstrip("- ")), normal) for line in lines[1:]]
         story.append(KeepTogether([title, body[0]]))
         story.extend(body[1:])
-    story.extend([Spacer(1, 12), Paragraph("Pendências que não foram inventadas", heading),
-                  Paragraph("Reflexão individual de 8 a 15 linhas; confirmação do uso histórico de streamlit skills; revisão das escolhas/justificativas e das conclusões assistidas por IA. A assinatura será feita pelo próprio autor. A geração deste PDF e o envio ao GitHub foram autorizados expressamente; publicação do app depende de acesso ao Community Cloud.", normal)])
+    story.append(KeepTogether([Spacer(1, 12), Paragraph("Revisão e assinatura", heading),
+                  Paragraph("A reflexão foi redigida com apoio do Codex, a pedido do autor e com base nos relatos fornecidos. A assistência está registrada no Uso 12. Confirmar o uso histórico de streamlit skills e revisar as declarações, escolhas e conclusões antes da assinatura. O autor confirmou testes do app publicado e revisão das métricas. A assinatura permanece pessoal e não foi inserida pela IA.", normal)]))
     stream = io.BytesIO()
     def footer(canvas, doc):
         canvas.setFont("ArialDoc", 8)
@@ -83,6 +83,10 @@ def appendix():
 
 
 def main():
+    if OUTPUT.exists():
+        for field in (PdfReader(OUTPUT).get_fields() or {}).values():
+            if field.get("/FT") == "/Sig" and field.get("/V"):
+                raise RuntimeError("O PDF possui assinatura. Não será sobrescrito; use uma cópia não assinada.")
     doc = pymupdf.open(TEMPLATE)
     page = doc[0]
     values = {"Turma": "5A", "Nome Completo": NOME, "E-mail": "ama3@cesar.school", "Repositório": "https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit", "Data de entrega": DATA}
@@ -124,7 +128,13 @@ def main():
     for rect in doc[3].search_for("Sim"):
         if rect.y0 > 687:
             textbox(doc[3], (rect.x0 - 12, rect.y0, rect.x0 - 3, rect.y1 + 1), "X", size=8)
-    # Campo editável para o texto pessoal, sem conteúdo em nome do aluno.
+    # Campo editável com a redação assistida solicitada pelo autor.
+    reflection_path = ROOT / "prompts/reflexao-individual.txt"
+    reflection = reflection_path.read_text(encoding="utf-8").strip() if reflection_path.exists() else ""
+    if reflection:
+        lines = reflection.splitlines()
+        assert 8 <= len(lines) <= 15
+        assert all(pymupdf.get_text_length(line, fontname="helv", fontsize=10) < 462 for line in lines)
     widget = pymupdf.Widget()
     widget.field_name = "reflexao_individual"
     widget.field_type = pymupdf.PDF_WIDGET_TYPE_TEXT
@@ -132,24 +142,24 @@ def main():
     widget.rect = pymupdf.Rect(61, 161, 531, 342)
     widget.text_font = "Helv"
     widget.text_fontsize = 10
-    widget.field_value = ""
+    widget.field_value = reflection
     doc[4].add_widget(widget)
     textbox(doc[4], (61, 476, 294, 492), NOME, size=9)
     textbox(doc[4], (457, 476, 532, 492), DATA, size=9)
     with pymupdf.open(stream=appendix(), filetype="pdf") as annex:
         doc.insert_pdf(annex)
-    doc.set_metadata({"title": "Declaração de uso de IA - College", "author": NOME, "subject": "Preenchida com dados objetivos; reflexão e assinatura do autor pendentes"})
+    doc.set_metadata({"title": "Declaração de uso de IA - College", "author": NOME, "subject": "Identificação e reflexão assistida preenchidas; revisão e assinatura do autor pendentes"})
     doc.save(OUTPUT, garbage=4, deflate=True)
     doc.close()
     reader = PdfReader(OUTPUT)
     fields = reader.get_fields() or {}
-    assert "reflexao_individual" in fields and fields["reflexao_individual"].get("/V", "") == ""
+    assert "reflexao_individual" in fields and fields["reflexao_individual"].get("/V", "") == reflection
     render = ROOT / "tmp/pdfs/declaracao"
     render.mkdir(parents=True, exist_ok=True)
     with pymupdf.open(OUTPUT) as rendered:
         for i, page in enumerate(rendered, 1):
             page.get_pixmap(matrix=pymupdf.Matrix(1.1, 1.1)).save(render / f"pagina-{i:02}.png")
-    print(f"PDF: {OUTPUT}; páginas: {len(reader.pages)}; reflexão editável vazia; assinatura não inserida.")
+    print(f"PDF: {OUTPUT}; páginas: {len(reader.pages)}; reflexão: {len(reflection.splitlines())} linhas, editável; assinatura não inserida.")
 
 
 if __name__ == "__main__":

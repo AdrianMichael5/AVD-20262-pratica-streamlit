@@ -17,9 +17,9 @@
 | Registro | Conversas completas ou blocos por uso relevante | Minuta organizada em blocos. Arquivos de resumo não são tratados como transcrições completas. Histórico anterior preservado; confirmação final dos relatos pelo autor pendente. |
 | Skill oficial | Declarar uso de `streamlit skills`, mesmo se só no esqueleto | Não utilizada pelo Codex nesta sessão. Uso na sessão anterior solicitado ao autor; README de modelo não é evidência de uso real. |
 | Código | Marcar apoio com `# [IA] ferramenta - finalidade` | Marcações inseridas nos arquivos criados/alterados com assistência e nas células tecnicamente revisadas do notebook. |
-| Reflexão | Texto individual de 8 a 15 linhas | Solicitado ao autor; não redigido pela IA. |
+| Reflexão | Texto individual de 8 a 15 linhas | Autor solicitou redação assistida: dez linhas inseridas no Markdown e PDF, com apoio de Codex explicitamente registrado. Revisão pessoal pendente; não se certifica autoria sem assistência. |
 | Responsabilidade | Revisar, assinar manuscrita/digitalmente e datar | Pendente; nenhuma assinatura ou certificação pessoal foi simulada. |
-| Entrega | PDF assinado em `prompts/DECLARACAO_IA.pdf` e no Classroom | PDF de oito páginas gerado e conferido, com reflexão editável vazia. Faltam revisão das marcações, reflexão e assinatura do autor; o Markdown não substitui o PDF assinado. |
+| Entrega | PDF assinado em `prompts/DECLARACAO_IA.pdf` e no Classroom | PDF de oito páginas conferido, com reflexão assistida preenchida. Faltam revisão e assinatura do autor; o Markdown não substitui o PDF assinado. |
 
 ## Orientação sobre os arquivos locais extras
 
@@ -29,6 +29,6 @@ O notebook `Cópia_de_Aula_11_Prática_EDA.ipynb` permanece intacto como referê
 
 1. Confirmar o uso histórico da skill oficial. A identificação já foi fornecida e preenchida.
 2. Escrever a justificativa das métricas/gráficos e a síntese de 3–5 conclusões da EDA.
-3. Escrever a reflexão individual de 8–15 linhas e revisar os registros de uso.
+3. Revisar a reflexão de dez linhas redigida com assistência solicitada ao Codex e os registros de uso.
 4. Conferir os pontos de assistência em escolhas que o template reserva ao aluno; se necessário, consultar a professora sobre a adequação.
 5. Depois de preenchido, revisar e assinar o PDF final. A assinatura não é delegada à IA.

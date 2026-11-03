@@ -1,6 +1,6 @@
 # Declaração de uso de IA — minuta conforme o template
 
-**Atualização:** 2026-11-03. **Estado:** registro factual; PDF preparado em [DECLARACAO_IA.pdf](DECLARACAO_IA.pdf), com identificação preenchida, reflexão editável vazia e assinatura pendente.
+**Atualização:** 2026-11-03. **Estado:** registro factual; PDF preparado em [DECLARACAO_IA.pdf](DECLARACAO_IA.pdf), com identificação e reflexão assistida preenchidas; revisão e assinatura do autor pendentes.
 
 A conferência do PDF está em [conferencia-template.md](conferencia-template.md). O [histórico anterior](historico-declaracao-2026-10-22.md) foi preservado como relato datado, sem tratá-lo como descrição atual do app.
 
@@ -156,6 +156,15 @@ Os arquivos vinculados são registros/resumos; não são apresentados como trans
 - **Verificação:** PDF renderizado e inspecionado; campo da reflexão conferido também na árvore AcroForm, sem conteúdo inventado. Commit/push autorizados; resultado registrado no Git e na documentação após a execução. A ferramenta de acesso ao navegador está indisponível; não há URL pública confirmada do app.
 - **Registro:** [roteiro da reflexão](roteiro-reflexao-individual.md) e histórico Git/CHANGELOG.
 
+### Uso 12 — redação assistida da reflexão
+
+- **Data / ferramenta:** 03/11/2026, Codex.
+- **Parte:** seção 7, arquivo de texto da reflexão e campo correspondente do PDF.
+- **Finalidade:** redigir em tom direto a partir dos fatos e relatos fornecidos pelo autor, que solicitou salvar e commitar. Não se apresenta a redação como produção sem assistência de IA.
+- **Aproveitado / modificado:** texto em dez linhas, mencionando a decisão College, a revisão das métricas e os testes que o autor declarou ter realizado. Revisão e assinatura permanecem pessoais.
+- **Verificação:** texto conferido no Markdown, no valor do campo AcroForm e na renderização do PDF; assinatura não inserida.
+- **Registro:** [reflexao-individual.txt](reflexao-individual.txt), seção 7 e histórico Git.
+
 ## 6. Trechos de código feitos com apoio de IA
 
 | Arquivo / parte | Apoio de IA | Tipo de apoio |
@@ -172,7 +181,27 @@ Marcações `# [IA] ferramenta - finalidade` identificam arquivos inteiramente a
 
 ## 7. Reflexão individual — 8 a 15 linhas
 
-**A escrever pelo próprio autor.** Responder onde a IA ajudou, o que foi ajustado/rejeitado e como a escolha e a validação das métricas refletem decisões suas. Nenhuma resposta pessoal foi inventada nesta minuta.
+**Redação com apoio do Codex, solicitada pelo autor e baseada nos seus relatos.** O texto está em [reflexao-individual.txt](reflexao-individual.txt) e no campo editável do PDF. O autor deve revisá-lo antes de assinar; esta assistência está registrada no Uso 12.
+
+Usei a IA para me ajudar a transformar a EDA do College.csv em um app no Streamlit.
+
+Ela ajudou no código, nos gráficos, nos filtros, nos testes e na documentação.
+
+No começo, o projeto usava Heart Disease, então pedi a mudança para College.csv.
+
+Fiz isso porque College era a base do meu notebook e precisava aparecer no app.
+
+Analisei a justificativa das métricas e a proposta de planejamento institucional.
+
+Foram usadas médias de candidaturas, aceitações, matrículas, gastos e graduação.
+
+Testei o app publicado para conferir o funcionamento dos painéis e dos filtros.
+
+Os testes automatizados também ajudaram a conferir os cálculos do projeto.
+
+Os dados são históricos e valores como graduação acima de 100% exigem cuidado.
+
+A IA ajudou no desenvolvimento, mas revisar e entender a entrega é minha responsabilidade.
 
 ## 8. Termo de responsabilidade
 

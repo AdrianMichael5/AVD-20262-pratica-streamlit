@@ -61,13 +61,13 @@ O arquivo original do autor foi preservado; o notebook final é [notebooks/eda.i
 - [Changelog com datas, responsáveis e commits anteriores](CHANGELOG.md)
 - [Planejamento e dois rascunhos College](entregas/planejamento.md)
 - [Orientações das entregas](entregas/README.md)
-- [Declaração de IA em PDF, para preencher a reflexão e assinar](prompts/DECLARACAO_IA.pdf)
+- [Declaração de IA em PDF, com reflexão preenchida para revisão e assinatura](prompts/DECLARACAO_IA.pdf)
 - [Registro factual em Markdown](prompts/declaracao-uso-ia.md)
 - [Roteiro da reflexão individual](prompts/roteiro-reflexao-individual.md)
 - [Conferência do template e pendências pessoais](prompts/conferencia-template.md)
 - [Preparação da publicação](entregas/preparacao-publicacao.md)
 - [Repositório público](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit) — código College e entregáveis enviados para main.
 
-O PDF foi gerado no template original, com identificação preenchida e campo editável de reflexão. **Antes de assinar:** escrever 8–15 linhas de reflexão, confirmar o uso histórico de `streamlit skills` e revisar as declarações. A assinatura será feita pelo autor; o PDF ainda não está assinado.
+O PDF foi gerado no template original, com identificação e reflexão assistida de dez linhas preenchidas. A redação com apoio de Codex foi solicitada pelo autor e está declarada no registro de usos. **Antes de assinar:** revisar o texto, confirmar o uso histórico de `streamlit skills` e conferir as declarações. A assinatura será feita pelo autor; o PDF ainda não está assinado.
 
 `data/raw/`, `.venv/`, `tmp/`, `.env` e `.streamlit/secrets.toml` ficam fora do versionamento. O CSV tratado é intencionalmente versionado para o deploy. Relatórios anteriores de Heart Disease são históricos e não validam o app College.
