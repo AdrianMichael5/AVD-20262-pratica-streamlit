@@ -1,7 +1,7 @@
 # Preparação da publicação — College.csv
 
 **Data:** 2026-11-03. **Executor:** Codex (OpenAI), solicitado por Adrian Michael.
-**Estado:** código e entregáveis enviados a main no commit `b1bb1db`; deploy e URL pública ainda pendentes.
+**Estado:** código e entregáveis enviados a main; URL de publicação fornecida pelo autor e registrada no README. Aceite publicado pendente.
 
 ## Parâmetros
 
@@ -15,7 +15,7 @@
 | Dados usados pelo app | data/clean/dataset.csv, College, 777 linhas/20 colunas |
 | Autenticação/segredos do app | Nenhum; não baixa da Kaggle em execução |
 | Versão da entrega enviada | b1bb1db9d8e9c746880180589ee0e36f8f7eb951; código College e entregáveis |
-| URL | Não atribuída |
+| URL informada pelo autor | https://college-adrian-avd.streamlit.app/ |
 
 A EDA e ferramentas de revisão usam `requirements-dev.txt`, separado das dependências do deploy. Os testes e rascunhos College estão em [validacao-college.md](validacao-college.md).
 
@@ -35,4 +35,8 @@ Procedimento conferido nas documentações oficiais de [deploy](https://docs.str
 
 Executar P01–P08 do [checklist](../CHECKLIST.md) em janela anônima, registrando URL/commit/data/executor. O host de navegador estava indisponível para inspeção visual nesta sessão; AppTest e HTTP local não substituem esse aceite.
 
-O tema College e a identificação já foram fornecidos. O autor delegou a adoção da proposta técnica de público/métricas; justificativa pessoal, reflexão e assinatura continuam pendentes. Código e documentos foram publicados no GitHub; isso não equivale à hospedagem do app. A versão instalada do CLI Streamlit foi consultada e não possui comando de deploy. O host de navegador necessário para operar o Community Cloud está indisponível nesta sessão.
+O tema College e a identificação já foram fornecidos. O autor delegou a adoção da proposta técnica de público/métricas; justificativa pessoal, reflexão e assinatura continuam pendentes. O autor forneceu o endereço de publicação após a orientação de deploy. A versão instalada do CLI Streamlit não possui comando de deploy; o host de navegador desta sessão continua indisponível para o aceite visual.
+
+### Verificação do endereço em 03/11/2026
+
+Solicitações HTTP sem autenticação à raiz e a `/_stcore/health` responderam 200, com conteúdo HTML. O segundo endereço não retornou o texto `ok`; portanto, não se certifica saúde do runtime por esse resultado. Os testes de abas/widgets e de acesso em janela anônima permanecem pendentes. Nenhum desses testes foi marcado como aprovado apenas pela resposta HTTP.

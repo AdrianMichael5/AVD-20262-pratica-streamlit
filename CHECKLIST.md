@@ -23,7 +23,7 @@
 | A01 | [x] | App, notebook, CSV, src, scripts, testes, entregas e prompts enviados ao repositório remoto em `b1bb1db`; notebook original e PDF de template incluídos conforme pedido “commite tudo”. Segredos/ambiente/temporários ignorados. |
 | A02 | [x] | Dois rascunhos College em `entregas/`, com autoria/data e identificação de revisão posterior ao app inicial. Conferidos visualmente. |
 | A03 | [x] | Repositório público confirmado via GitHub CLI: https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit, branch main. Conteúdo remoto final depende de A01. |
-| A04 | [ ] | App publicado e URL real adicionada ao README. |
+| A04 | [x] | URL de publicação informada pelo autor e adicionada ao README: https://college-adrian-avd.streamlit.app/. Resposta HTTP 200 em 03/11/2026; aceite funcional publicado continua em T01–T04. |
 | A05 | [ ] | PDF `prompts/DECLARACAO_IA.pdf` gerado e conferido em oito páginas, com identificação 5A/Adrian Michael de Araujo/ama3@cesar.school/03-11-2026. Reflexão editável vazia; confirmação de ferramentas/skill, revisão e assinatura pendentes. Entregar também no Classroom. |
 | A06 | [ ] | Escolha e justificativa pessoal das métricas/gráficos em `entregas/justificativa-metricas.md`; roteiro atualizado para College, sem respostas inventadas. |
 | T01 | [ ] | Abrir a versão publicada em janela anônima e registrar URL/commit/data/executor. |
@@ -38,7 +38,7 @@
 | 1. Planejamento | Adaptado para College | Dois rascunhos e planejamento; público/justificativa individual pendentes. |
 | 2. Implementação | Concluída localmente | App College, cinco KPIs, três gráficos, filtro de tipo e 17 variáveis; dez testes aprovados. |
 | 3. Documentação/EDA | Parte técnica realizada | 49 células executadas, CSV conferido e documentação atualizada; textos pessoais e PDF assinado pendentes. |
-| 4. Publicação | Código enviado; deploy pendente | Commit/push confirmados para main; parâmetros de app.py/Python 3.12 preparados. Falta publicar no painel Streamlit e registrar URL real; host de navegador indisponível nesta sessão. |
+| 4. Publicação | URL registrada; aceite pendente | Código enviado a main; autor informou https://college-adrian-avd.streamlit.app/, incluída no README. HTTP 200 verificado; carregamento completo no navegador ainda não validado. |
 | 5. Aceite | Pendente | Executar o roteiro abaixo na versão publicada. |
 
 ## Aceite publicado

@@ -4,7 +4,9 @@ Projeto de Adrian Michael para Análise e Visualização de Dados, Cesar School,
 
 **Tema confirmado pelo autor em 03/11/2026:** College.csv, conforme a EDA do arquivo `Cópia_de_Aula_11_Prática_EDA.ipynb`. A versão atual substitui o app anterior de Heart Disease.
 
-**App publicado:** URL ainda pendente. O projeto College foi enviado ao GitHub em `main`, commit [b1bb1db](https://github.com/AdrianMichael5/AVD-20262-pratica-streamlit/commit/b1bb1db9d8e9c746880180589ee0e36f8f7eb951). O link real do app será incluído após o deploy.
+**App publicado:** [college-adrian-avd.streamlit.app](https://college-adrian-avd.streamlit.app/).
+
+URL informada pelo autor em 03/11/2026 e registrada após resposta HTTP 200. O aceite em janela anônima, incluindo abas e widgets, permanece pendente no checklist. O código e os entregáveis estão na branch `main` deste repositório.
 
 ## Dashboards
 
